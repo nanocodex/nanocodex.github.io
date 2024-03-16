@@ -4,7 +4,8 @@
         <!-- logo or branding image on left side -->
         <div class="navbar-brand">
             <a class="navbar-item"
-                href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+                href="{{site.url}}{{site.baseurl}}">
+                <img src="/assets/images/welding-torch.png" alt="site icon" style="object-fit: contain;">&nbsp;
                 <strong>{{site.title}}</strong>
             </a>
             <div class="navbar-burger" data-target="navbar-menu">
@@ -27,7 +28,10 @@
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
                 <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
                     href="{{site.url}}{{site.baseurl}}/blog">BLOG</a>
-                {% include dropdown.html %}
+                    <a class="navbar-item {% if page.layout == 'project' %}is-active{% endif %}"
+                    href="{{site.url}}{{site.baseurl}}/project">PROJECTS</a>
+                <!-- Change false to true to include drop-down menu -->
+                {% if false %}{% include dropdown.html %}{% endif %}
             </div>
 
         </div>
