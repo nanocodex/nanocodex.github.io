@@ -266,6 +266,13 @@ a.navbar-item.is-active {
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+            // Hides image if there's none to display
+            .image[style="background-image: url();"] {
+                display: none;
+                // Alternatively, you could add a placeholder image by 
+                // commenting out the above line and uncommenting the line below:
+                // background-image: url(../images/1280x720\ Placeholder.png);
+            }
         }
     }
 
