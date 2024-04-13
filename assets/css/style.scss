@@ -271,7 +271,7 @@ a.navbar-item.is-active {
                 display: none;
                 // Alternatively, you could add a placeholder image by 
                 // commenting out the above line and uncommenting the line below:
-                // background-image: url(../images/1280x720\ Placeholder.png);
+                // background-image: url(../images/1280x720\ Placeholder.png) !important;
             }
         }
     }
