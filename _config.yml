@@ -56,9 +56,8 @@ sass:
 
 # Build settings
 plugins:
-  #- jekyll-admin
+  - jekyll-admin
   - jekyll-feed
-  - github-pages
 
 # Permalink
 permalink: "blog/:title"
@@ -84,6 +83,11 @@ defaults:
     values:
       layout: page
 
+# Jekyll Admin configs
+jekyll_admin:
+  # Homepage config doesn't work for some reason
+  homepage: "posts"
+
 # Exclude
 exclude:
   - .sass-cache/
@@ -99,3 +103,5 @@ exclude:
   - start.cmd
   - _posts/template-posts
   - test-page.md
+  - _posts/drafts
+  
